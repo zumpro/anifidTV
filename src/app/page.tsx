@@ -1,29 +1,13 @@
 // pages/index.tsx
 
 import Image from "next/image";
+import Banner from "@/components/Banner";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-zinc-900 text-white">
       {/* Баннер */}
-      <section className="relative h-[60vh] flex items-center justify-start px-12">
-        <Image
-          src="/banner.jpg" // Заменить на баннер аниме
-          alt="Banner Anime"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-40"
-        />
-        <div className="z-10 max-w-xl">
-          <h2 className="text-4xl font-bold mb-2">Атака Титанов</h2>
-          <p className="text-lg mb-4">
-            Эпическое противостояние человечества и титанов продолжается.
-          </p>
-          <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-lg">
-            Смотреть
-          </button>
-        </div>
-      </section>
+      <Banner />
 
       {/* Продолжить просмотр */}
       <section className="mt-12 px-6">
